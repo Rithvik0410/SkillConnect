@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Skill Connect Dashboard</title>
+    <link rel="shortcut icon" href="./images/logo.png" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo" title="Skill Connect">
+        <img src="./images/logo.png" alt="" />
+        <h2>Skill <span class="danger">Connect</span></h2>
+      </div>
+      <div class="navbar">
+        <a href="index.html" class="active">
+          <span class="material-icons-sharp">dashboard</span>
+          <h3>Dashboard</h3>
+        </a>
+        <a href="matches.html">
+          <span class="material-icons-sharp">group</span>
+          <h3>Find a Match</h3>
+        </a>
+        <a href="projects.html">
+          <span class="material-icons-sharp">grid_view</span>
+          <h3>Projects</h3>
+        </a>
+        <a href="resources.html">
+          <span class="material-icons-sharp">library_books</span>
+          <h3>Resources</h3>
+        </a>
+        <a href="challenges.html">
+          <span class="material-icons-sharp">emoji_events</span>
+          <h3>Challenges</h3>
+        </a>
+        <a href="#">
+          <span class="material-icons-sharp">logout</span>
+          <h3>Logout</h3>
+        </a>
+      </div>
+      <div id="profile-btn">
+        <span class="material-icons-sharp">person</span>
+      </div>
+      <div class="theme-toggler">
+        <span class="material-icons-sharp active">light_mode</span>
+        <span class="material-icons-sharp">dark_mode</span>
+      </div>
+    </header>
+
+    <div class="container">
+      <aside>
+        <div class="profile">
+          <div class="top">
+            <div class="profile-photo">
+              <img src="./images/profile-1.jpg" alt="" />
+            </div>
+            <div class="info">
+              <!-- User's name and ID -->
+              <p>Hey, <b>Alex</b></p>
+              <small class="text-muted">12102030</small>
+            </div>
+          </div>
+
+          <!-- Additional user information -->
+          <div class="about">
+            <!-- Add relevant user details here -->
+            <!-- Example: Course, DOB, Contact, Email, Address -->
+            <!-- You can fetch this data dynamically later -->
+            <!-- For now, we keep it static -->
+            ...
+          </div>
+        </div>
+      </aside>
+
+      <!-- Main Dashboard Content -->
+      <main>
+        <!-- Section for Challenges -->
+        <section id="challenges-section">
+          <h2>Challenges</h2>
+          <!-- List of challenges can be dynamically generated here -->
+          <!-- Example challenge card -->
+          <div class="challenge-card">
+            <h3>Python Coding Challenge</h3>
+            <p>Complete the task to improve your Python skills.</p>
+            <button onclick="location.href='challenge-details.html'">
+              View Challenge
+            </button>
+          </div>
+
+          <!-- More challenges can be added similarly -->
+        </section>
+
+        <!-- Section for Resources -->
+        <section id="resources-section">
+          <h2>Resources</h2>
+          <!-- List of resources can be dynamically generated here -->
+          <!-- Example resource card -->
+          ...
+        </section>
+
+        <!-- Section for Finding Matches -->
+        <section id="find-match-section">
+          <h2>Find a Match</h2>
+          <!-- List of potential matches can be dynamically generated here -->
+          ...
+        </section>
+
+        <!-- Section for Projects -->
+        <section id="projects-section">
+          <h2>Your Projects</h2>
+          <!-- List of projects can be dynamically generated here -->
+          ...
+        </section>
+      </main>
+
+      <!-- Right Sidebar for Announcements or Notifications -->
+      <div class="right">
+        <!-- Announcements Section -->
+        ...
+      </div>
+    </div>
+
+    <!-- Include your JavaScript file if needed -->
+    <script src="app.js"></script>
+  </body>
+</html>

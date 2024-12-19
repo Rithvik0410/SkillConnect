@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--=============== REMIXICONS ===============-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css"
+      crossorigin=""
+    />
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+
+    <title>Register Form</title>
+  </head>
+  <body>
+    <div class="login">
+      <img src="assets/img/login-bg.png" alt="image" class="login__bg" />
+
+      <form action="" class="login__form">
+        <h1 class="login__title">Register</h1>
+
+        <div class="login__inputs">
+          <div class="login__box">
+            <input placeholder="Name" required class="login__input" />
+          </div>
+
+          <div class="login__box">
+            <input placeholder="USN" required class="login__input" />
+          </div>
+
+          <div class="login__box">
+            <select required class="login__input">
+              <option value="" disabled selected>Select your skill</option>
+              <optgroup label="Programming Languages">
+                <option value="C">C</option>
+                <option value="C++">C++</option>
+                <option value="Java">Java</option>
+                <option value="Python">Python</option>
+                <option value="JavaScript">JavaScript</option>
+                <option value="TypeScript">TypeScript</option>
+                <option value="Ruby">Ruby</option>
+                <option value="PHP">PHP</option>
+                <option value="Go">Go</option>
+                <option value="Rust">Rust</option>
+                <option value="Swift">Swift</option>
+                <option value="Kotlin">Kotlin</option>
+                <option value="R">R</option>
+                <option value="Perl">Perl</option>
+              </optgroup>
+
+              <!-- Web Development -->
+              <optgroup label="Web Development">
+                <option value="HTML">HTML</option>
+                <option value="CSS">CSS</option>
+                <option value="React">React</option>
+                <option value="Vue.js">Vue.js</option>
+                <option value="Angular">Angular</option>
+                <option value="Node.js">Node.js</option>
+                <option value="Express.js">Express.js</option>
+                <option value="Next.js">Next.js</option>
+                <option value="SASS/SCSS">SASS/SCSS</option>
+              </optgroup>
+
+              <!-- Mobile App Development -->
+              <optgroup label="Mobile App Development">
+                <option value="Flutter">Flutter</option>
+                <option value="React Native">React Native</option>
+                <option value="Swift">Swift</option>
+                <option value="Kotlin">Kotlin</option>
+                <option value="Java (Android)">Java (Android)</option>
+              </optgroup>
+
+              <!-- Databases -->
+              <optgroup label="Databases">
+                <option value="MySQL">MySQL</option>
+                <option value="PostgreSQL">PostgreSQL</option>
+                <option value="MongoDB">MongoDB</option>
+                <option value="SQLite">SQLite</option>
+                <option value="Redis">Redis</option>
+                <option value="Oracle DB">Oracle DB</option>
+              </optgroup>
+
+              <!-- Data Science and Machine Learning -->
+              <optgroup label="Data Science & Machine Learning">
+                <option value="Pandas">Pandas</option>
+                <option value="NumPy">NumPy</option>
+                <option value="Scikit-Learn">Scikit-Learn</option>
+                <option value="TensorFlow">TensorFlow</option>
+                <option value="Keras">Keras</option>
+                <option value="PyTorch">PyTorch</option>
+                <option value="Matplotlib">Matplotlib</option>
+                <option value="Seaborn">Seaborn</option>
+              </optgroup>
+
+              <!-- DevOps -->
+              <optgroup label="DevOps">
+                <option value="Docker">Docker</option>
+                <option value="Kubernetes">Kubernetes</option>
+                <option value="Jenkins">Jenkins</option>
+                <option value="Terraform">Terraform</option>
+                <option value="Git">Git</option>
+                <option value="GitHub Actions">GitHub Actions</option>
+                <option value="AWS">AWS</option>
+                <option value="Azure">Azure</option>
+                <option value="Google Cloud">Google Cloud</option>
+              </optgroup>
+
+              <!-- Cybersecurity -->
+              <optgroup label="Cybersecurity">
+                <option value="Ethical Hacking">Ethical Hacking</option>
+                <option value="Penetration Testing">Penetration Testing</option>
+                <option value="Network Security">Network Security</option>
+                <option value="Cryptography">Cryptography</option>
+                <option value="Security Auditing">Security Auditing</option>
+              </optgroup>
+
+              <!-- Game Development -->
+              <optgroup label="Game Development">
+                <option value="Unity">Unity</option>
+                <option value="Unreal Engine">Unreal Engine</option>
+                <option value="GameMaker">GameMaker</option>
+                <option value="Godot">Godot</option>
+                <option value="Blender (3D Modeling)">
+                  Blender (3D Modeling)
+                </option>
+              </optgroup>
+
+              <!-- Miscellaneous -->
+              <optgroup label="Miscellaneous">
+                <option value="UI/UX Design">UI/UX Design</option>
+                <option value="Data Structures & Algorithms">
+                  Data Structures & Algorithms
+                </option>
+                <option value="API Development">API Development</option>
+                <option value="Blockchain">Blockchain</option>
+                <option value="IoT">IoT</option>
+                <option value="Augmented Reality (AR)">
+                  Augmented Reality (AR)
+                </option>
+                <option value="Virtual Reality (VR)">
+                  Virtual Reality (VR)
+                </option>
+              </optgroup>
+            </select>
+          </div>
+
+          <div class="login__box">
+            <select required class="login__input">
+              <option value="" disabled selected>Goals</option>
+              <optgroup label="Programming Languages">
+                <option value="C">C</option>
+                <option value="C++">C++</option>
+                <option value="Java">Java</option>
+                <option value="Python">Python</option>
+                <option value="JavaScript">JavaScript</option>
+                <option value="TypeScript">TypeScript</option>
+                <option value="Ruby">Ruby</option>
+                <option value="PHP">PHP</option>
+                <option value="Go">Go</option>
+                <option value="Rust">Rust</option>
+                <option value="Swift">Swift</option>
+                <option value="Kotlin">Kotlin</option>
+                <option value="R">R</option>
+                <option value="Perl">Perl</option>
+              </optgroup>
+
+              <!-- Web Development -->
+              <optgroup label="Web Development">
+                <option value="HTML">HTML</option>
+                <option value="CSS">CSS</option>
+                <option value="React">React</option>
+                <option value="Vue.js">Vue.js</option>
+                <option value="Angular">Angular</option>
+                <option value="Node.js">Node.js</option>
+                <option value="Express.js">Express.js</option>
+                <option value="Next.js">Next.js</option>
+                <option value="SASS/SCSS">SASS/SCSS</option>
+              </optgroup>
+
+              <!-- Mobile App Development -->
+              <optgroup label="Mobile App Development">
+                <option value="Flutter">Flutter</option>
+                <option value="React Native">React Native</option>
+                <option value="Swift">Swift</option>
+                <option value="Kotlin">Kotlin</option>
+                <option value="Java (Android)">Java (Android)</option>
+              </optgroup>
+
+              <!-- Databases -->
+              <optgroup label="Databases">
+                <option value="MySQL">MySQL</option>
+                <option value="PostgreSQL">PostgreSQL</option>
+                <option value="MongoDB">MongoDB</option>
+                <option value="SQLite">SQLite</option>
+                <option value="Redis">Redis</option>
+                <option value="Oracle DB">Oracle DB</option>
+              </optgroup>
+
+              <!-- Data Science and Machine Learning -->
+              <optgroup label="Data Science & Machine Learning">
+                <option value="Pandas">Pandas</option>
+                <option value="NumPy">NumPy</option>
+                <option value="Scikit-Learn">Scikit-Learn</option>
+                <option value="TensorFlow">TensorFlow</option>
+                <option value="Keras">Keras</option>
+                <option value="PyTorch">PyTorch</option>
+                <option value="Matplotlib">Matplotlib</option>
+                <option value="Seaborn">Seaborn</option>
+              </optgroup>
+
+              <!-- DevOps -->
+              <optgroup label="DevOps">
+                <option value="Docker">Docker</option>
+                <option value="Kubernetes">Kubernetes</option>
+                <option value="Jenkins">Jenkins</option>
+                <option value="Terraform">Terraform</option>
+                <option value="Git">Git</option>
+                <option value="GitHub Actions">GitHub Actions</option>
+                <option value="AWS">AWS</option>
+                <option value="Azure">Azure</option>
+                <option value="Google Cloud">Google Cloud</option>
+              </optgroup>
+
+              <!-- Cybersecurity -->
+              <optgroup label="Cybersecurity">
+                <option value="Ethical Hacking">Ethical Hacking</option>
+                <option value="Penetration Testing">Penetration Testing</option>
+                <option value="Network Security">Network Security</option>
+                <option value="Cryptography">Cryptography</option>
+                <option value="Security Auditing">Security Auditing</option>
+              </optgroup>
+
+              <!-- Game Development -->
+              <optgroup label="Game Development">
+                <option value="Unity">Unity</option>
+                <option value="Unreal Engine">Unreal Engine</option>
+                <option value="GameMaker">GameMaker</option>
+                <option value="Godot">Godot</option>
+                <option value="Blender (3D Modeling)">
+                  Blender (3D Modeling)
+                </option>
+              </optgroup>
+
+              <!-- Miscellaneous -->
+              <optgroup label="Miscellaneous">
+                <option value="UI/UX Design">UI/UX Design</option>
+                <option value="Data Structures & Algorithms">
+                  Data Structures & Algorithms
+                </option>
+                <option value="API Development">API Development</option>
+                <option value="Blockchain">Blockchain</option>
+                <option value="IoT">IoT</option>
+                <option value="Augmented Reality (AR)">
+                  Augmented Reality (AR)
+                </option>
+                <option value="Virtual Reality (VR)">
+                  Virtual Reality (VR)
+                </option>
+              </optgroup>
+            </select>
+          </div>
+        </div>
+
+        <div class="login__check">
+          <div class="login__check-box">
+            <input type="checkbox" class="login__check-input" id="user-check" />
+            <label for="user-check" class="login__check-label"
+              >Remember me</label
+            >
+          </div>
+        </div>
+
+        <button type="submit" class="login__button">Register</button>
+
+        <div class="login__register">
+          Already have an account? <a href="login.html">Login</a>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

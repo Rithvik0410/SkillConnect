@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resources - Skill Connect</title>
+    <link rel="shortcut icon" href="./images/logo.png" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="resource.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo" title="Skill Connect">
+        <img src="./images/logo.png" alt="" />
+        <h2>Skill <span class="danger">Connect</span></h2>
+      </div>
+      <div class="navbar">
+        <a href="index.html">
+          <span class="material-icons-sharp">dashboard</span>
+          <h3>Dashboard</h3>
+        </a>
+        <a href="find-match.html">
+          <span class="material-icons-sharp">group</span>
+          <h3>Find a Match</h3>
+        </a>
+        <a href="projects.html">
+          <span class="material-icons-sharp">grid_view</span>
+          <h3>Projects</h3>
+        </a>
+        <a href="resources.html" class="active">
+          <span class="material-icons-sharp">library_books</span>
+          <h3>Resources</h3>
+        </a>
+        <a href="challenges.html">
+          <span class="material-icons-sharp">emoji_events</span>
+          <h3>Challenges</h3>
+        </a>
+        <a href="#">
+          <span class="material-icons-sharp">logout</span>
+          <h3>Logout</h3>
+        </a>
+      </div>
+      <div id="profile-btn">
+        <span class="material-icons-sharp">person</span>
+      </div>
+      <div class="theme-toggler">
+        <span class="material-icons-sharp active">light_mode</span>
+        <span class="material-icons-sharp">dark_mode</span>
+      </div>
+    </header>
+
+    <div class="container">
+      <aside>
+        <!-- Profile Section -->
+        <!-- You can include the same profile section as in the dashboard -->
+        ...
+      </aside>
+
+      <!-- Main Content for Resources -->
+      <main>
+        <h1>Resources</h1>
+
+        <!-- Button to add new resource -->
+        <button id="addResourceBtn">Add New Resource</button>
+
+        <!-- Resources List -->
+        <section id="resources-section">
+          <!-- Example resource card -->
+          <!-- This will be populated dynamically with JavaScript -->
+          <!-- Sample static resource card for demonstration -->
+          <div class="resource-card">
+            <h3>Resource Title: JavaScript Basics</h3>
+            <p>Description: A comprehensive guide to learning JavaScript.</p>
+            <p>Link: <a href="#" target="_blank">View Resource</a></p>
+            <button onclick="editResource('JavaScript Basics')">
+              Edit Resource
+            </button>
+            <button onclick="deleteResource('JavaScript Basics')">
+              Delete Resource
+            </button>
+          </div>
+
+          <!-- More resource cards will be added here dynamically -->
+        </section>
+      </main>
+
+      <!-- Right Sidebar for Notifications or Announcements -->
+      <!-- You can include the same right sidebar as in the dashboard -->
+      ...
+    </div>
+
+    <!-- Include your JavaScript file if needed -->
+    <script src="app.js"></script>
+
+    <!-- Modal for Adding New Resource -->
+    <!-- This can be hidden by default and shown when "Add New Resource" is clicked -->
+    <div id="addResourceModal" class="modal">
+      <div class="modal-content">
+        <span class="close-button" onclick="closeModal()">&times;</span>
+        <h2>Add New Resource</h2>
+        <form id="newResourceForm">
+          <input
+            type="text"
+            id="resourceTitle"
+            placeholder="Resource Title"
+            required
+          />
+          <textarea
+            id="resourceDescription"
+            placeholder="Resource Description"
+            required
+          ></textarea>
+          <input
+            type="url"
+            id="resourceLink"
+            placeholder="Resource Link (URL)"
+            required
+          />
+          <!-- Add more fields as necessary (e.g., Tags) -->
+          <button type="submit">Create Resource</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
